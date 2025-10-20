@@ -1,4 +1,4 @@
-# 💳 C++ ATM Projesi
+#  C++ ATM Projesi
 
 Bu proje, C++ programlama dili kullanılarak geliştirilmiş **temel bir ATM (Automated Teller Machine)** simülasyonudur.  
 Gerçek bir banka sistemine bağlı değildir ve **başlangıç bakiyesi tamamen hayalidir**.  
@@ -6,23 +6,23 @@ Amaç, kullanıcıların bankacılık işlemlerini C++ dilinde fonksiyonel olara
 
 ---
 
-## 🧩 Proje Özeti
+##  Proje Özeti
 
 Program, kullanıcıdan giriş bilgilerini aldıktan sonra bir ATM menüsü sunar.  
 Kullanıcı menü aracılığıyla aşağıdaki işlemleri gerçekleştirebilir:
 
-- 🔹 Bakiye Sorgulama  
-- 🔹 Para Yatırma  
-- 🔹 Para Çekme  
-- 🔹 Hesap Özeti Görüntüleme  
-- 🔹 Çıkış Yapma  
+-  
+-  Para Yatırma  
+-  Para Çekme  
+-  Fatura Ödeme
+-  Çıkış Yapma  
 
 Tüm işlemler belirli fonksiyonlar aracılığıyla yapılır.  
-Programın başında belirlenen **başlangıç bakiyesi (örneğin 1000₺)** sadece örnek amaçlıdır ve **gerçek bir para değerini temsil etmez**.
+Programın başında belirlenen **başlangıç bakiyesi (örneğin 1000₺)** ve fatura borçları tamamen hayalidir ve  sadece örnek amaçlıdır 
 
 ---
 
-## ⚙️ Kullanılan Teknolojiler
+##  Kullanılan Teknolojiler
 
 - **Programlama Dili:** C++  
 - **Derleyici:** g++ veya herhangi bir C++17 uyumlu derleyici  
@@ -30,23 +30,27 @@ Programın başında belirlenen **başlangıç bakiyesi (örneğin 1000₺)** sa
 
 ---
 
-## 🔧 Fonksiyonlar
+##  Fonksiyonlar
 
 Projede kullanılan bazı temel fonksiyonlar:
 
 | Fonksiyon Adı | Açıklama |
 |----------------|-----------|
-| `void showMenu()` | ATM menüsünü ekrana yazar. |
-| `void checkBalance(double balance)` | Mevcut bakiyeyi gösterir. |
-| `void depositMoney(double &balance)` | Kullanıcıdan para yatırma işlemi alır. |
-| `void withdrawMoney(double &balance)` | Para çekme işlemini gerçekleştirir. |
-| `void transactionHistory()` | Kullanıcının yaptığı işlemleri listeler. |
+| `void paracekme()` | Mevcut bakiyeden klavyeden girilen miktar kadar para çekilir . |
+| `void parayatirma (double nakit) ` | Mevcut bakiyenin üstüne klavyeden girilen miktar kadar para eklenir. |
+| `void elektrikborcu (double elektrikborc)` | Kullanıcının elektrik faturasını öder. |
+| `void suborcu (double suborc)` | Kullanıcının su faturası borcunu öder. |
+| `void telefonborcu (double telefonborc)` | Kullanıcının telefon borcunu öder. |
+| `void internetborcu (double internet) {` | Kullanıcının internet borcunu öder. |
+| `void asgariborc (double asgari)` | Kullanıcının kredi kartı borcunun sadece asgari tutarını öder. |
+| `void kreditamami (double tamami) ` | Kullanıcının kredi kartı borcunun tamamını öder. |
+| `void  cikis ()` | Programdan çıkış yapılmasını sağlar. |
 
 Tüm fonksiyonlar **modüler ve okunabilir** olacak şekilde yazılmıştır.
 
 ---
 
-## ▶️ Çalıştırma
+##  Çalıştırma
 
 ### 1. Derleme
 Terminal veya komut satırında:
