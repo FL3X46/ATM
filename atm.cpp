@@ -9,7 +9,7 @@ KULLANIM ŞARTLARI
  *     garanti veya sorumluluk kabul edilmez.
  *
  * ------------------------------------------------------------
- *   (c) 2025 [Adınız Soyadınız]. Tüm hakları saklıdır.
+ *   (c) 2025 Muhammed Emin KENGER. Tüm hakları saklıdır.
  * ============================================================
  */
 
@@ -146,5 +146,6 @@ if  (secim < 1 || secim > 9 ) {
 		 
 	
 	
+
 
 
