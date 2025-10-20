@@ -13,6 +13,9 @@ double internet = 800 ;
 double asgari = 600 ;
 double  tamami = 1300 ;
 
+void mevcutbakiye(bakiye) {
+	cout << bakiye ;
+}
 
 void paracekme() {
     while (true){
@@ -127,3 +130,4 @@ if  (secim < 1 || secim > 9 ) {
 		 
 	
 	
+
