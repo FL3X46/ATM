@@ -1,3 +1,19 @@
+/*
+KULLANIM ŞARTLARI
+ * ------------------------------------------------------------
+ *   - Bu proje yalnızca eğitim ve kişisel öğrenme amaçlıdır.
+ *   - Herhangi bir ticari amaçla kullanılması yasaktır.
+ *   - Kod üzerinde değişiklik yapılabilir ve paylaşılabilir,
+ *     ancak orijinal yazarın adı korunmalıdır.
+ *   - Yazılım "OLDUĞU GİBİ" sağlanmaktadır; herhangi bir
+ *     garanti veya sorumluluk kabul edilmez.
+ *
+ * ------------------------------------------------------------
+ *   (c) 2025 [Adınız Soyadınız]. Tüm hakları saklıdır.
+ * ============================================================
+ */
+
+
 #include <iostream> 
 #include <string>
 #include <list>
@@ -130,4 +146,5 @@ if  (secim < 1 || secim > 9 ) {
 		 
 	
 	
+
 
