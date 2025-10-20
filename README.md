@@ -25,8 +25,8 @@ Programın başında belirlenen **başlangıç bakiyesi (örneğin 1000₺)** ve
 ##  Kullanılan Teknolojiler
 
 - **Programlama Dili:** C++  
-- **Derleyici:** g++ veya herhangi bir C++17 uyumlu derleyici  
-- **IDE (isteğe bağlı):** Code::Blocks, Visual Studio, CLion veya VSCode  
+- **Derleyici:** TDM-GCC 4.9.2 64-bit Release
+- **IDE (isteğe bağlı):** Dev-C++ 5.11  
 
 ---
 
