@@ -1,18 +1,26 @@
 /*
-KULLANIM ŞARTLARI
- * ------------------------------------------------------------
- *   - Bu proje yalnızca eğitim ve kişisel öğrenme amaçlıdır.
- *   - Herhangi bir ticari amaçla kullanılması yasaktır.
- *   - Kod üzerinde değişiklik yapılabilir ve paylaşılabilir,
- *     ancak orijinal yazarın adı korunmalıdır.
- *   - Yazılım "OLDUĞU GİBİ" sağlanmaktadır; herhangi bir
- *     garanti veya sorumluluk kabul edilmez.
- *
- * ------------------------------------------------------------
- *   (c) 2025 Muhammed Emin KENGER. Tüm hakları saklıdır.
- * ============================================================
- */
+MIT License
 
+Copyright (c) 2025 Muhammed Emin KENGER
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
 
 #include <iostream> 
 #include <string>
@@ -29,10 +37,9 @@ double internet = 800 ;
 double asgari = 600 ;
 double  tamami = 1300 ;
 
-void mevcutbakiye(bakiye) {
+void mevcutbakiye (double bakiye) {
 	cout << bakiye ;
 }
-
 void paracekme() {
     while (true){
     	cout << "Cekilecek tutari giriniz:  ";
@@ -69,6 +76,7 @@ void parayatirma (double nakit) {
 	
 }
 
+
 void elektrikborcu (double elektrikborc) {
 	bakiye = bakiye - elektrikborc ;
 	cout << "elektrik borcunuz odenmistir fatura tutari:  " << elektrikborc << " " " kalan bakiyeniz:"  " "  <<bakiye << endl;  
@@ -103,13 +111,25 @@ void  cikis () {
 	cout <<"cikis yapilmistir iyi gunler dileriz (:" << endl;
 }
 int main() {
-cout << "KENGERBANK'A HOSGELDINIZ "  ;
+cout << "KENGERBANK'A HOSGELDINIZ "  << endl ;
+cout << "-------	Menu ------- "  << endl ;
+cout <<		 "1-Bakiye Goruntuleme" << endl ;
+cout <<		 "2-Para Cekme " << endl ;
+cout <<		 "3-Para Yatirma" << endl ;
+cout <<		 "4-Elektrik Faturasi Borcu Yatirma " << endl ;
+cout <<		 "5-Su Faturasi Borcu Yatirma " << endl;
+cout <<		 "6-Telefon Faturasi Borcu Yatirma " << endl ;
+cout <<		 "7-internet Faturasi Borcu Yatirma  " << endl ;
+cout <<		 "8-Kredi Kartinin Asgari Borcunu Odeme " << endl;
+cout <<		 "9-Kredi Karti borcunun tamamini Odeme  " << endl ;
+cout <<		 "10- Cikis" << endl ;		 	
+
 while (true) {
 int secim ;
-
-cout << "Lutfen hangi islemi yapmak istediginizi seciniz 1 - 9: " <<  endl;
+	 
+cout << "Lutfen hangi islemi yapmak istediginizi seciniz 1 - 10: " <<  endl;
 cin >> secim ;
-if  (secim < 1 || secim > 9 ) {
+if  (secim < 1 || secim > 10 ) {
 	cout << "yanlis bir deger girdiniz: "  ;
 	continue ;
 	
@@ -118,24 +138,27 @@ if  (secim < 1 || secim > 9 ) {
 
 
 	switch (secim) {
-		case 1: paracekme() ;
+		
+		case 1:  ;
 			break ;
-		case 2: parayatirma(nakit) ;
+		case 2: paracekme() ;
 			break ;
-		case 3: elektrikborcu(elektrikborc) ;
+		case 3: parayatirma(nakit) ;
+			break ;
+		case 4: elektrikborcu(elektrikborc) ;
 			break ;
 	
-		case 4: suborcu(suborc) ;
+		case 5: suborcu(suborc) ;
 			break ;
-		case 5: telefonborcu(telefonborc) ;
+		case 6: telefonborcu(telefonborc) ;
 			break ;
-		case 6: internetborcu(internet) ;
+		case 7: internetborcu(internet) ;
 			break ;
-	 	case 7: asgariborc(asgari) ;
+	 	case 8: asgariborc(asgari) ;
 			break ;
-		case 8: kreditamami(tamami) ;
+		case 9: kreditamami(tamami) ;
 			break ;
-		case 9: cikis() ;
+		case 10: cikis() ;
 			return 0 ;
 	}
 		}
@@ -146,6 +169,3 @@ if  (secim < 1 || secim > 9 ) {
 		 
 	
 	
-
-
-
