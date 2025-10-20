@@ -11,7 +11,7 @@ Amaç, kullanıcıların bankacılık işlemlerini C++ dilinde fonksiyonel olara
 Program, kullanıcıdan giriş bilgilerini aldıktan sonra bir ATM menüsü sunar.  
 Kullanıcı menü aracılığıyla aşağıdaki işlemleri gerçekleştirebilir:
 
--  
+ 
 -  Para Yatırma  
 -  Para Çekme  
 -  Fatura Ödeme
