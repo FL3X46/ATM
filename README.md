@@ -36,6 +36,7 @@ Projede kullanılan bazı temel fonksiyonlar:
 
 | Fonksiyon Adı | Açıklama |
 |----------------|-----------|
+| `void mevcutbakiye(bakiye)` | Mevcut bakiyeyi gösterir. |
 | `void paracekme()` | Mevcut bakiyeden klavyeden girilen miktar kadar para çekilir . |
 | `void parayatirma (double nakit) ` | Mevcut bakiyenin üstüne klavyeden girilen miktar kadar para eklenir. |
 | `void elektrikborcu (double elektrikborc)` | Kullanıcının elektrik faturasını öder. |
